@@ -19,33 +19,55 @@
     </rule>
 
 
-    <!-- Content negotiation for requests asking for rdf+xml -->
-    <rule>
-        <condition name="Accept" type="header">application/rdf\+xml</condition>
-        <from>^/$</from>
-        <to type="redirect">https://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinowl/efo.owl?format=raw</to>
-    </rule>
-
-    <rule>
-        <from>^/efo.owl$</from>
-        <to type="redirect">http://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinowl/efo.owl?format=raw</to>
-    </rule>
-
-
     <rule>
         <from>/(EFO_[0-9]+)$</from>
         <to type="redirect">http://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=$1</to>
     </rule>
 
-    <rule>
-        <from>^/efo_inferred.owl</from>
-        <to type="redirect">http://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinowl/InferredEFOOWLview/EFO_inferred.owl?format=raw</to>
-    </rule>
+
+    <!-- Content negotiation for requests asking for rdf+xml -->
 
     <rule>
-        <from>^/efo.obo</from>
-        <to type="redirect">http://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinobo/efo.obo?format=raw</to>
+        <condition name="Accept" type="header">application/rdf\+xml</condition>
+        <from>^/$</from>
+        <to type="forward">efo.owl</to>
     </rule>
+
+    <!--<rule>-->
+        <!--<from>^/efo.owl$</from>-->
+        <!--<to type="forward">efo.owl</to>-->
+    <!--</rule>-->
+
+    <!--<rule>-->
+        <!--<from>^/efo_inferred.owl</from>-->
+        <!--<to type="redirect">http://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinowl/InferredEFOOWLview/EFO_inferred.owl?format=raw</to>-->
+    <!--</rule>-->
+
+    <!--<rule>-->
+        <!--<from>^/efo.obo</from>-->
+        <!--<to type="redirect">http://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinobo/efo.obo?format=raw</to>-->
+    <!--</rule>-->
+
+    <!--<rule>-->
+        <!--<condition name="Accept" type="header">application/rdf\+xml</condition>-->
+        <!--<from>^/$</from>-->
+        <!--<to type="redirect">https://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinowl/efo.owl?format=raw</to>-->
+    <!--</rule>-->
+
+    <!--<rule>-->
+        <!--<from>^/efo.owl$</from>-->
+        <!--<to type="redirect">http://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinowl/efo.owl?format=raw</to>-->
+    <!--</rule>-->
+
+    <!--<rule>-->
+        <!--<from>^/efo_inferred.owl</from>-->
+        <!--<to type="redirect">http://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinowl/InferredEFOOWLview/EFO_inferred.owl?format=raw</to>-->
+    <!--</rule>-->
+
+    <!--<rule>-->
+        <!--<from>^/efo.obo</from>-->
+        <!--<to type="redirect">http://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinobo/efo.obo?format=raw</to>-->
+    <!--</rule>-->
 
 
     <outbound-rule>
