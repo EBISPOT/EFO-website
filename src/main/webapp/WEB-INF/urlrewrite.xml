@@ -21,7 +21,7 @@
 
     <rule>
         <from>/(EFO_[0-9]+)$</from>
-        <to type="redirect">http://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=$1</to>
+        <to type="redirect">https//www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=$1</to>
     </rule>
 
 
@@ -38,14 +38,25 @@
         <!--<to type="forward">efo.owl</to>-->
     <!--</rule>-->
 
-    <!--<rule>-->
-        <!--<from>^/efo_inferred.owl</from>-->
-        <!--<to type="redirect">http://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinowl/InferredEFOOWLview/EFO_inferred.owl?format=raw</to>-->
-    <!--</rule>-->
+    <rule>
+        <from>^/releases/(v[0-9]{4}-[0-9]{2}-[0-9]{2})/(.*).owl</from>
+        <to type="redirect">https://raw.githubusercontent.com/EBISPOT/efo/$1/$2.owl</to>
+    </rule>
 
     <rule>
         <from>^/efo.obo</from>
-        <to type="redirect">http://sourceforge.net/p/efo/code/HEAD/tree/trunk/src/efoinobo/efo.obo?format=raw</to>
+        <to type="forward">efo.obo</to>
+    </rule>
+
+
+    <rule>
+        <from>^/efo_inferred.owl</from>
+        <to type="forward">efo_inferred.owl</to>
+    </rule>
+
+    <rule>
+        <from>^/efo_inferred_all.owl</from>
+        <to type="forward">efo_inferred_all.owl</to>
     </rule>
 
     <!--<rule>-->
