@@ -21,7 +21,7 @@
 
     <rule>
         <from>/(EFO_[0-9]+)$</from>
-        <to type="redirect">https//www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=$1</to>
+        <to type="redirect">https://www.ebi.ac.uk/ols/ontologies/efo/terms?short_form=$1</to>
     </rule>
 
 
