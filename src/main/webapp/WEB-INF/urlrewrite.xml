@@ -48,6 +48,10 @@
         <to type="forward">efo.obo</to>
     </rule>
 
+    <rule>
+        <from>^/efo_full.obo</from>
+        <to type="forward">efo_full.obo</to>
+    </rule>
 
     <rule>
         <from>^/efo_inferred.owl</from>
