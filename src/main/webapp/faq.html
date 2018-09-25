@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>FAQ EFO &lt; EMBL-EBI</title>
     <meta name="description"
-          content="The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI GWAS catalog. It combines parts of several biological ontologies, such as UBERON anatomy, ChEBI chemical compounds, and Cell Ontology. The scope of EFO is to support the annotation, analysis and visualization of data handled by many groups at the EBI and as the core ontology for Open Targets. We also add terms for external users when requested. If you are new to ontologies, there is a short introduction on the subject available and a blog post by James Malone on what ontologies are for."/>
+          content="The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI-EBI GWAS catalog. It combines parts of several biological ontologies, such as UBERON anatomy, ChEBI chemical compounds, and Cell Ontology. The scope of EFO is to support the annotation, analysis and visualization of data handled by many groups at the EBI and as the core ontology for Open Targets. We also add terms for external users when requested. If you are new to ontologies, there is a short introduction on the subject available and a blog post by James Malone on what ontologies are for."/>
     <meta name="keywords" content="bioinformatics, europe, institute"><!-- A few keywords that relate to the content of THIS PAGE (not the whol project) -->
     <meta name="author" content="James Malone"/>
     <meta name="author" content="Tomasz Adamusiak"/>
@@ -301,7 +301,7 @@
 
                         <p>
                             The Experimental Factor Ontology (EFO) provides a systematic description of many data elements
-                            available in EBI databases, and for external projects such as the <a href="http://www.genome.gov/gwastudies/">NHGRI GWAS catalogue.</a> It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds. The scope of
+                            available in EBI databases, and for external projects such as the <a href="https://www.ebi.ac.uk/gwas/">NHGRI-EBI GWAS catalog.</a> It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds. The scope of
                             EFO is to support the annotation, analysis and visualization of the data handled by the Functional
                             Genomics Team at the EBI. We also add terms for external users when requested. For those of you new
                             to ontologies, there is a <a href="http://ontogenesis.knowledgeblog.org/66">5-minute introduction to the subject available</a>
@@ -355,11 +355,11 @@
                     <section>
 
                         <p>
-                            EFO is primarily used to annotate biomedical data from the EBI’s databases: <a href="http://www.ebi.ac.uk/biosamples/">the BioSamples database					</a>, the <a href="http://www.ebi.ac.uk/gxa">Atlas of Gene Expression</a> and <a href="http://www.ebi.ac.uk/arrayexpress">ArrayExpress.</a> It's 					also used for the GWAS catalogue and we are working to include annotations requested by external projects.
+                            EFO is primarily used to annotate biomedical data from the EBI’s databases: <a href="http://www.ebi.ac.uk/biosamples/">the BioSamples database					</a>, the <a href="http://www.ebi.ac.uk/gxa">Atlas of Gene Expression</a> and <a href="http://www.ebi.ac.uk/arrayexpress">ArrayExpress.</a> It's 					also used for the <a href="https://www.ebi.ac.uk/gwas/">GWAS catalog</a> and we are working to include annotations requested by external projects.
                         </p>
                         <p>
                             EFO is implemented in the ArrayExpress query interface, the Atlas query interface, in the Functional Genomics Team’s curation processes,
-                            and in the GWAS catalogue diagram we are developing with our NHGRI colleagues and will shortly be used in Ensembl.
+                            and in the GWAS catalog diagram we are developing with our NHGRI colleagues and will shortly be used in Ensembl.
                         </p><p>
                         Below is an example query in ArrayExpress which uses EFO to fetch all types of <b>cancer</b>. Here the ontology is used to expand on
                         everything that is a subclass of the class cancer in EFO and not just on anything exactly matching the word cancer.
@@ -507,12 +507,12 @@
 
                     </p><p>
                         For example, <i>process</i> - this is equivalent to the <a href="http://www.ifomis.org/bfo/">Basic Formal Ontology</a> <i>processual entity</i> and uses the same identifier (URI). It has been renamed process to make it easier to understand for our users. We have also
-                        omitted some of the extra structure that exists in ontologist such as BFO to simplify the ontology. Our primary axes
+                        omitted some of the extra structure that exists in ontologies such as BFO to simplify the ontology. Our primary axes
                         of classification are; Process (e.g. running an assay), Information (e.g. gene list), Materials (e.g. cells),
                         Properties of materials (e.g. colour, disease) and Site (e.g. sampling site).
 
                     </p><p>
-                        <i>Imported</i> classes have been imported from other ontologies; this means we resuse their URIs and the intended
+                        <i>Imported</i> classes have been imported from other ontologies; this means we reuse their URIs and the intended
                         meaning of the class, though we sometimes add synonyms or alter the textual definition to make it more palatable
                         and understandable to our user community (who are primarily biologists and not ontologists). This often means removing
                         <i>ontology speak</i> from the definitions such as upper ontology words (e.g. realizable entity) which are meaningless
@@ -545,7 +545,7 @@
                     <section>
                         <p>
                             EFO may be edited manually or programmatically.  Manual edits are done using the ontology authoring tool
-                            <a href="http://protege.stanford.edu/">Protege (version 4.1).</a>  Programmatic edits are made using the
+                            <a href="http://protege.stanford.edu/">Protege (version 5.2).</a>  Programmatic edits are made using the
                             <a href="http://owlapi.sourceforge.net/">OWL-API</a>, for example, to change a set of
                             URIs or other systematic changes and through our suite of <a href="http://www.ebi.ac.uk/fgpt/sw/index.html#ontologypowered">EFO tools</a>.
                             EFO is stored in a software versioning system (SVN).
@@ -574,8 +574,8 @@
                             EFO is updated daily and released on the 15th of the month or the soonest following weekday.  A monthly release schedule
                             allows us to add terms requested by external users and our own curators and to map these terms to our databases such as
                             the <a href="http://www.ebi.ac.uk/gxa">Atlas of Gene Expression</a>. You can sign up for release emails via the
-                            <a href="https://lists.sourceforge.net/lists/listinfo/efo-users">
-                                EFO mailing list</a> or read <a href="https://sourceforge.net/p/efo/code/HEAD/tree/trunk/docs/releasedocs/ExFactor%20Ontology%20release%20notes.txt">
+                            <a href="https://listserver.ebi.ac.uk/mailman/listinfo/efo-users">
+                                EFO mailing list</a> or read <a href="https://raw.githubusercontent.com/EBISPOT/efo/master/ExFactor%20Ontology%20release%20notes.txt">
                             the latest Release Notes.</a>
                         </p>
 
@@ -598,8 +598,8 @@
                 <div class="grid_24">
                     <section>
                         <p>
-                            EFO runs on a continuous integration platform we have developed over a number of years which checks for several potential sources of error after 					every edit (and subsequent commit to our code base). This includes checking for missing labels, badly formed URIs, invalid namespaces, 						trailing whitespace and duplication of labels and synonyms. EFO is also reviewed regularly at each monthly release by the developers, and also by external experts by invitation. If you find an error in EFO, or have style suggestions please send us an email
-                            efo-users@lists.sourceforge.net
+                            EFO runs on a continuous integration platform we have developed over a number of years which checks for several potential sources of error after 					every edit (and subsequent commit to our code base). This includes checking for missing labels, badly formed URIs, invalid namespaces, 						trailing whitespace and duplication of labels and synonyms. EFO is also reviewed regularly at each monthly release by the developers, and also by external experts by invitation. If you find an error in EFO, or have style suggestions please send us an email to
+                            <a href="mailto:efo-users@ebi.ac.uk?subject=EFO Question from web">EFO user list</a> or create an <a href="https://github.com/EBISPOT/efo/issues/new">issue ticket</a> on our GitHub.
                         </p>
 
                         <p class="backtotop">
@@ -652,10 +652,10 @@
                         <p>
                             You can generate a human-readable summary of changes between any two EFO versions using our
                             <a href="http://www.ebi.ac.uk/efo/bubastis">Bubastis tool.</a>  This performs a logical <i>diff</i>
-                            between the EFO files available for download from SourceForge showing which classes are new,
+                            between the EFO files available for download from GitHub showing which classes are new,
                             which have been changed and which are removed. The most recent release version
                             of EFO is always the most current and is updated at least monthly. We also include a summary
-                            of changes in the release notes.
+                            of changes in the <a href="https://raw.githubusercontent.com/EBISPOT/efo/master/ExFactor%20Ontology%20release%20notes.txt">release notes</a>.
 
                         </p>
 
@@ -679,8 +679,8 @@
                 <div class="grid_24">
                     <section>
                         <p>
-                            EFO is available as an OWL format file and as an OBO format file (converted from OWL). OWL
-                            files can be read into the Ontology editing tool Protege, and the OBO file can be read into
+                            EFO is available as an <a href="https://raw.githubusercontent.com/EBISPOT/efo/master/efo.owl">OWL format file</a> and as an <a href="https://raw.githubusercontent.com/EBISPOT/efo/master/efo.obo">OBO format file</a> (converted from OWL) - both are available on our <a href="https://github.com/EBISPOT/efo">GitHub repository</a>. OWL
+                            files can be read into the Ontology editing tool <a href="https://protege.stanford.edu/">Protege</a>, and the OBO file can be read into
                             Protege or OBO-Edit. We use Protege to edit EFO.
                         </p>
 
@@ -710,8 +710,8 @@
                             learning curve, so if you are in EBI we can show you if you buy us a coffee. Or you could attend
                             one of the courses on Protege OWL run by us, or the Bio-health Informatics group in Manchester.
                         <p></p>
-                        To look at EFO in Protege download and install Protege (we use version 4.1) and the most recent
-                        release of EFO from our sourceforge repository. The Protege tool has a steep learning curve, so we
+                        To look at EFO in Protege download and install <a href="https://protege.stanford.edu/">Protege</a> (we use version 5.2) and the most recent
+                        release of EFO from our <a href="https://github.com/EBISPOT/efo">GitHub repository</a>. The Protege tool has a steep learning curve, so we
                         recommend reading the user documentation. If you simply want to explore or search EFO using a browser use BioPortal or OLS.
                         </p>
 
@@ -810,8 +810,8 @@
                 <div class="grid_24">
                     <section>
                         <p>
-                            Please use the <a href="http://www.ebi.ac.uk/panda/jira/secure/CreateIssue!default.jspa">JIRA tracker</a> to request
-                            terms (note that our older SourceForge tracker is no longer used). All user requests are assigned
+                            Please use <a href="https://github.com/EBISPOT/efo/issues/new">GitHub</a> to request
+                            terms (note that our older SourceForge tracker and JIRA tracker are no longer used). All user requests are assigned
                             to a developer and scheduled for a release. If you are working inside EBI please feel free to come along and see us
                             with your list and we will talk through it with you.
 
