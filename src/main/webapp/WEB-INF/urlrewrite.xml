@@ -39,8 +39,8 @@
     <!--</rule>-->
 
     <rule>
-        <from>^/releases/(v[0-9]{4}-[0-9]{2}-[0-9]{2})/(.*).owl</from>
-        <to type="redirect">https://raw.githubusercontent.com/EBISPOT/efo/$1/$2.owl</to>
+        <from>^/releases/(v\d+\.\d+\.\d+)/(.*).owl</from>
+        <to type="redirect">https://github.com/EBISPOT/efo/releases/download/$1/$2.owl</to>
     </rule>
 
     <rule>
